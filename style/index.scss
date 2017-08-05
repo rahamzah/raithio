@@ -1,20 +1,83 @@
-html, body {
-	height: 100%;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	background: #FAFAFA;
-	font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 400;
-	color: #444;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+@import './bootstrap/bootstrap.scss';
+
+@import './colors.scss';
+
+@font-face {
+  font-family: 'Portico';
+  src: url('../fonts/portico_regular-webfont.eot');
+  src: url('../fonts/portico_regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/portico_regular-webfont.woff2') format('woff2'),
+    url('../fonts/portico_regular-webfont.woff') format('woff'),
+    url('../fonts/portico_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Portico Light Italic';
+  src: url('../fonts/portico_light_oblique-webfont.eot');
+  src: url('../fonts/portico_light_oblique-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/portico_light_oblique-webfont.woff2') format('woff2'),
+    url('../fonts/portico_light_oblique-webfont.woff') format('woff'),
+    url('../fonts/portico_light_oblique-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Portico Light';
+  src: url('../fonts/portico_light-webfont.eot');
+  src: url('../fonts/portico_light-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/portico_light-webfont.woff2') format('woff2'),
+    url('../fonts/portico_light-webfont.woff') format('woff'),
+    url('../fonts/portico_light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $base;
+  font-family: 'Roboto', 'Helvetica Neue', arial, sans-serif;
+  font-weight: 400;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: $success;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #app {
-	height: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Portico', 'Comic Sans', arial, sans-serif;
+}
+h1 {
+  font-size: 75px;
+}
+
+a,
+a:hover,
+a:visited,
+a:active,
+a:focus {
+  color: $success;
 }
